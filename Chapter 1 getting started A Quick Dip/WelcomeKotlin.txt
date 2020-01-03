@@ -1,0 +1,8 @@
+Kotlin có nhiều tính năng nổi bật
+	-ngắn gọn, súc tích, dễ đọc
+	-lập trình hướng đối tượng giống java nhưng cũng hỗ trợ lập trình hướng chức năng
+	- an toàn hạn chế lỗi
+	
+Kotlin được dùng ở nhiều nơi
+
+khai báo function: fun main(args : Array<String>){}:hàm main tương tự java	
