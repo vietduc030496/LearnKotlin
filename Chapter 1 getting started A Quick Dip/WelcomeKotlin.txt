@@ -5,4 +5,5 @@ Kotlin có nhiều tính năng nổi bật
 	
 Kotlin được dùng ở nhiều nơi
 
-khai báo function: fun main(args : Array<String>){}:hàm main tương tự java	
+khai báo function: fun main(args : Array<String>){}:hàm main tương tự java
+-if expression: if (x > y) "x is greater than y" else "x is not greater than y"
