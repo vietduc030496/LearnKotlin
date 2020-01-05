@@ -6,4 +6,11 @@ Kotlin có nhiều tính năng nổi bật
 Kotlin được dùng ở nhiều nơi
 
 khai báo function: fun main(args : Array<String>){}:hàm main tương tự java
--if expression: if (x > y) "x is greater than y" else "x is not greater than y"
+-if expression: if (x > y) "x is greater than y" else "x is not greater than y":phải có cả else
+-REPL stands for Read-Eval-Print Loop
+
+- TỔNG KẾT Chương 1:
+	- dùng fun để định nghĩa function;
+	- dùng var khai báo biến thay đổi;
+	- dùng val khai báo tiến hằng số;
+	- co thể dùng if như một mệnh đề, lúc này else là bắt buộc
