@@ -1,0 +1,23 @@
+MỞ ĐẦU:
+- biến như 1 cái cốc đều chứa gì đó
+- vd: var x = 5: khai báo với compiler kotlin giá trị của biến, tên biến và liệu biến có thể chứa giá trị khác
+- để khai báo 1 biến cần
+	+ tên biến: sự dụng trong code
+	+ biến có thể đc sự dụng lại
+	+ loại biến
+	
+KOTLIN basic type
+- số nguyên: Byte- Short-Int-Long: khai báo 1 biến nguyên mặc định kiểu là Int nếu lớn hơn nữa sẽ là Long
+- số nguyên tố: Float-Double: khi báo 1 biến nguyên tố mặc định kiểu là double
+- Booleans
+- Characters & String :
+
+- khai bao biến theo kiểu: var x : Short: khai báo biến x kiểu Short
+
+* số trong Kotlin là object
+* char trong kotlin chỉ lưu trữ kí tự, khác java lưu trữ cả số
+
+CONVERT GIÁ TRỊ CÁC KIỂU
+- var x : Int = 5;
+	var y : Long = x.toLong(): tạo 1 đối tượng Long mới có giá trị = x và đưa vào y: phù hợp ép kiểu nhỏ sang kiểu lớn hơn
+	
