@@ -20,4 +20,8 @@ KOTLIN basic type
 CONVERT GIÁ TRỊ CÁC KIỂU
 - var x : Int = 5;
 	var y : Long = x.toLong(): tạo 1 đối tượng Long mới có giá trị = x và đưa vào y: phù hợp ép kiểu nhỏ sang kiểu lớn hơn
-	
+- nếu convert từ kiểu lớn về kiểu nhỏ sẽ ko convert được nếu vượt quá giá trị kiểu nhỏ, sẽ nhận về 1 số khác
+
+ARRAY:là 1 đối tượng
+- tạo: var myArray = arrayOf(1, 2, 3): tạo mảng 3 phần tử = function arrayOf và gán cho myArray: loại array tự định nghĩa
+- var myArray: Array<Byte> = arrayOf(1, 2, 3) : khai báo loại cho array

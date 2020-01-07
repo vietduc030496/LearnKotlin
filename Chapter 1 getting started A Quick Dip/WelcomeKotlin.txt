@@ -14,3 +14,5 @@ khai báo function: fun main(args : Array<String>){}:hàm main tương tự java
 	- dùng var khai báo biến thay đổi;
 	- dùng val khai báo tiến hằng số;
 	- co thể dùng if như một mệnh đề, lúc này else là bắt buộc
+	- $: string teplate : lấy giá trị 1 biến khi ở trong chuỗi
+	- s{} gọi thuộc tính của đối tượng or phàn tử trong array
