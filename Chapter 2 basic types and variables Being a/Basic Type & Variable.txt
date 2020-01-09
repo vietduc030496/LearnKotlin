@@ -25,3 +25,18 @@ CONVERT GIÁ TRỊ CÁC KIỂU
 ARRAY:là 1 đối tượng
 - tạo: var myArray = arrayOf(1, 2, 3): tạo mảng 3 phần tử = function arrayOf và gán cho myArray: loại array tự định nghĩa
 - var myArray: Array<Byte> = arrayOf(1, 2, 3) : khai báo loại cho array
+- array khai báo val ko thể gán cho array khác đc nhưng từng phần tử trong array đó có thể thay đổi
+ 
+ 
+ ĐIỂm CẦN NHỚ
+ + Để tạo một biến, trình biên dịch cần biết tên, kiểu của nó và liệu nó có thể tái sử dụng
+ + Nếu kiểu biến đổi không được xác định rõ ràng, trình biên dịch sẽ nhập nó từ giá trị của nó
+ + Một biến giữ một tham chiếu đến một đối tượng
+ + Một đối tượng có trạng thái và hành vi. Hành vi của nó được bộc lộ thông qua các function của nó
+ + Xác định biến với var có nghĩa là tham chiếu đối tượng của biến có thể được thay thế. Xác định
+biến với val có nghĩa là biến giữ một tham chiếu đến cùng một đối tượng mãi mãi.
+ + Kotlin các kiểu: Byte, Short, Int, Long, Float, Double, Boolean, Char and String.
+ + Bạn chỉ có thể gán giá trị cho một biến có loại tương thích.
+ + Bạn có thể chuyển đổi một loại số sang loại khác. Nếu giá trị không phù hợp với loại mới, một số độ chính xác bị mất
+ + Tạo một mảng bằng cách sử dụng hàm ArrayOf: var myArray = ArrayOf (1, 2, 3)
+ + Nếu bạn xác định một mảng bằng val, bạn vẫn có thể cập nhật các mục trong mảng
