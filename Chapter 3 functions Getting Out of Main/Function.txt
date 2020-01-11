@@ -1,0 +1,10 @@
+mở đầu: phân chia mã thành nhiều function
+	+ code dễ tổ chức: dễ đọc và hiểu code
+	+ code dễ tái sử dụng
+
+FUNCTION
+	+ Đối số là những biến truyền vào function
+	+ tha sốm là biến cục bộ có tên và kiểu dùng trong function
+
+Khai báo function: fun "tên function" (para : Type) : Kiểu trả về	(ko có kiểu trả về thì ko viết gì or trar về Unit) {}
+	+ function chỉ có 1 câu lệnh có thể viết : fun test(a : Int) : Int = a; : return về a ko cần viết trong {}
