@@ -8,3 +8,20 @@ FUNCTION
 
 Khai báo function: fun "tên function" (para : Type) : Kiểu trả về	(ko có kiểu trả về thì ko viết gì or trar về Unit) {}
 	+ function chỉ có 1 câu lệnh có thể viết : fun test(a : Int) : Int = a; : return về a ko cần viết trong {}
+	+ param đc coi như biên local khai báo = val
+	
+Lặp : + for(x in 1..10): lặp từ 1 đến 10 (bao gồm);
+	  + for(x in 1 util 10): lặp từ 1 đến 9 (ko bao gồm)
+	  + for(x in 15 downTo 1) : lặp từ 15 xuống 1, 2 for trên lặp tăng dần
+	  + for(x in 1..10 step 2): lặp và cộng thê step vào x ở buớc sau: kết quả: 1 3 5 7 9;
+	  + foreach: for(x in array)
+	  + for đặc biệt : for((index, itea) in option.withIndex()){
+							println("index $a whith tea $b");
+						} : vòng lặp chạy và gán index array cho biến index, giá trị ite cho biến itea
+
+ĐIỂ CẦN NHỚ
+ + function làm code tổ chức và dễ tái sự dụng
+ + function có param 1 hoặc nhiều
+ + "Unit" định nghĩa function ko trả về gì
+ + readLine(); nhập từ bàn phím
+ 
