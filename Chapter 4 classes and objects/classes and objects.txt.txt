@@ -1,0 +1,11 @@
+mở đầu: Nếu bạn ứng dựng của mình xử lý các đôi tượng mà kotlin ko có, bạn có thể tạo loại của riêng bạn = class
+
+TẠO CÁC Class : đầu tiên cần xem sét
+ + những đặc điểm object đó
+ + object đó làm đc gì
+ 
+TẠO OBJECT từ Class
+các bước khi tạo 1 object
+ + khai báo 1 biến: vd var myDog = Dog();
+ + tạo object Dog;
+ + Liên kết đôi tượng với biến bằng tham chiếu
