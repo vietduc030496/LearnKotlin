@@ -9,3 +9,20 @@ các bước khi tạo 1 object
  + khai báo 1 biến: vd var myDog = Dog();
  + tạo object Dog;
  + Liên kết đôi tượng với biến bằng tham chiếu
+ 
+ + init block : được chạy sau contructor: vd init{todo}, 1 class có nhiều init block thực hiện theo thứ tự xuất hiện
+ + dùng lateinit : vd lateinit var test: String: sẽ biên dịch ko cần khai báo test(ko khuyên khích, chỉ dùng đc với var)
+ 
+ SETTER GETTER
+  + khi bạn goi thuộc tính: vd "myDog.weight" getter của thuộc đó sẽ đc gọi tự động(luôn luôn gọi)
+  + Biến var phải khởi tạo, biến val ko phải khởi tạo vì get() đc gọi
+  
+  +setter: khi gán thuộc tính vd"myDog.weight = 75" setter của thuộc tính đó sẽ đc gọi tự động
+  
+  +sự dụng field thay cho property là quan trọng gì nó tránh lặp setter getter gọi lại nhau
+  + khai báo val: copiler tự động thê getter, var tự động khai báo vả setter và getter
+  +Removing direct access to a property’s value by wrapping it in getters and setters is known as data hiding.
+  
+ĐIỂ CẦN NHỚ
+ + Bạn có thể định nghĩa một thuộc tính trong hàm tạo chính bằng cách thêm tiền tố vào một tham số bằng val hoặc var.
+ + init block chạy khi một đối tượng được khởi tạo.
