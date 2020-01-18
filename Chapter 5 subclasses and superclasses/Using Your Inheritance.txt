@@ -1,0 +1,23 @@
+mở đầu: Thừa kế giúp giả trùng lặp code
+
+ + IS A: kiểm tra 2 class có phải kế thừa
+ + HAS A: quan hệ tham chiếu đến nhau
+ 
+ +sự dựng "open" trước lớp và thuộc tính, function để thông báo đồng í đây là superclass và thuộc tính function có thể ghi đè
+ + sự dưng ":" sau tên claas và tiếp theo là superclass để kế thừa
+ + sử dụng override tc thuộc tính và function để ghi đè
+ * nếu khai báo thuộc tinh superclass là val thì phải ghi đè, còn var thì ko cần do thay đổi đc(ngược java)
+ * nếu thuộc tinh superclass là var thì ko thể ghi đè là val đc(ngược lại thì đc)
+ 
+ Override function
+	+ para phải khớp lớp cha
+	+ trả về kiểu tương thích hoặc subclass
+ + KHi khai báo "open" các THUỘC TÍNH bị override vẫn open cho đến khi khai báo "final" vd:final override fun...
+ + bất cứ khi nào có superclass, có thể sự dụng subclass để thay
+ 
+ ĐIỂ CẦN NHỚ
+  + tcx khi sử dụng 1 class làz super class cần khai báo open cho class, và thuộc tính func cần ghi đè
+  + sử dụng ":" định nghĩa 1 subclass
+  + "override" tc thuộc tính và function để ghi đè
+  + thuộc tính và function vẫn "open" cho đến khi "final"
+  + sử dụng lớp con ở bất cứ khi nào có lớp cha
