@@ -1,0 +1,6 @@
+mở Đầu: khi muốn class đc kế thừa nhưng ko cần khởi tạo thì dùng inteface và abstract
+
+	+ dùng abstract trước class để khai báo: ko cần khai báo open nữa
+	+ trong abstract class có thể có thuộc tính và function abstract(java chỉ có function)
+	+ abstract tc function và thuộc tính để khai báo đó là abstract
+	+ thuộc tính abstract ko có getter setter valf giá trị khởi tạo
