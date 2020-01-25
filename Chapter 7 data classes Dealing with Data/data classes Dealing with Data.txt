@@ -22,3 +22,23 @@ data class: tốt hơn để ghi đè các function của Any, override các fun
 		+ toán tử ===: true nếu refer cùng 1 đối tượng ko phân biệt type(ko gọi equals)
 		+ == kiểm tra sự tương đương của đối tượng.
 		+ === kiểm tra danh tính đối tượng
+	
+	+ các thuộc tính tron contructor mới được sử dụng trong các function của data class
+	+ Mỗi dataclass phải có một hàm tạo chính, phải xác định ít nhất một tham số. Mỗi
+tham số phải được bắt đầu bằng val hoặc var
+
+DEFAULT VALUE:
+	+ tạo giá trị mặc định cho thuộc tính trong contructor
+	+ truyền args theo thứ tự khai báo, có thể ko cần truyền cho thuộc tính có giá trị mặc đinh trong contructor
+	+ truyền = tên args contructor: vd val a = A(title = "aa")
+	+ có thể tạo contructor phụ phải uỷ quyền cho contructor chính (ko dùng nhiều do truyền theo tên args đc)
+	+ tương tự các para trong function cũng có giá trị mặc định
+
+OVERLOADING
+
+TỔNG KẾT:
+
+NGUYÊN TẮC data class
+	+ cóntructor có ít 1 args đc đánh dấu là val hoặc var
+	+ ko đc open hay abstract
+	
