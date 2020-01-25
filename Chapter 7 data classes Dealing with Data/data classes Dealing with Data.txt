@@ -1,0 +1,24 @@
+MỞ ĐẦU: Tìm hiểu về Any: "Mẹ của tất cả superclass" (Tương tự Object trong java)
+	+ khi gọi toán tử == , function "equals" sẽ đc gọi đằng sau
+
+LỢI ÍCH của Any
+	+ Đảm bảo mọi class đều kế thừa hành vi chung
+	+ Đảm bảo tất cả class đều đa hình do chung lớp cha là Any
+
+MỘT SỐ FUNCTION CỦA Any
+	+ equals(): đc gọi khi sử dụng ==
+	+ hashCode():
+	+ tótring(): mặc định tên lớp và số đằng sau
+	
+data class: tốt hơn để ghi đè các function của Any, override các function của Any, có thêm function xử lý data
+	+ thêm tiền tố data vào tc class để khai báo đó là data class
+	+ tự động override lại các hàm của Any
+		+ equals: so sánh dựa trên các thuộc tính trong contructor của object đó
+		+ toString: trả về giá trị thuộc tính trong contructor
+	+ các function riêng
+		+ copy()
+		+ componentN:N là số thứ tự thuộc tính trong contructor, lấy giá trị thuộc tính
+		+ vd, val(title, isVegetarian) = r: tạo 2 biến title, isVegetarian và gán component tương ứng của r cho
+		+ toán tử ===: true nếu refer cùng 1 đối tượng ko phân biệt type(ko gọi equals)
+		+ == kiểm tra sự tương đương của đối tượng.
+		+ === kiểm tra danh tính đối tượng
