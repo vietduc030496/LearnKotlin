@@ -1,0 +1,38 @@
+mỞ ĐẦU:  Một loại nullable là một loại cho phép các giá trị null. Không giống như các ngôn ngữ lập trình khác, Kotlin theo dõi
+các giá trị có thể là null để ngăn bạn thực hiện các hành động không hợp lệ đối với chúng
+-Xóa tham chiếu đối tượng bằng null
+	+ khai báo một loại là nullable bằng cách thêm một dấu hỏi (?) Vào cuối type. Để tạo ra một
+biến Wolf nullable và gán một đối tượng Wolf mới cho nó, ví dụ, var wolf: Wolf? = new Wolf
+	+ Và nếu bạn muốn xóa tham chiếu Wolf khỏi biến, bạn sẽ sử dụng:  wolf = null
+	* : cần chỉ rõ type của biến: nếu ko sẽ tạo ra biến chỉ giữ giá trị null
+	
+-safe call: w? = w.eat() 
+	+ nếu w khác null sẽ truy cập function eat()
+	+ nếu w tất cả sẽ trả về null
+
+let block: w?.let{} : nếu w ko null thì....
+	+ it: là phiên bản ko null của w để truy cập các thuộc tính
+
+-elvis operator: ?: w?.hunger ?: 1 nếu w?.hunger khác null sẽ trả về nó nếu ko trả về -1
+
+Toán tử Elvis ?: Là phiên bản an toàn của biểu thức if. Nó trả về giá trị bên trái của nó nếu đó không phải là null.
+Mặt khác, nó trả về giá trị bên phải của nó
+
+- !! operator
+
+-try/catch	
+- type Exception: super class của tất cả ngoại lệ
+
+- as? cho phép bạn thực hiện ép kiểu rõ ràng an toàn. Nếu thất bại, nó trả về null. vd val x = r as? Wolf
+
+- biểu thức try/catch: val x = try{str.toInt()} catch(e: Exception) {null}
+- biểu thức throw: val x = w?.hunger ?: throw AnialsException()
+
+ĐIỂ CẦN NHỚ
+	+ null là kiểu ko refer đến đối tượng nào
+	+ nullable là kiểu ngoài type ra biến có thể null
+	+ ?. :dùng để kiể tra nếu ko null sẽ truy cập
+	+ ?.let{} thực thi nếu ko null
+	+ ?: :toán tử elvis
+	+ !! sẽ né ngoại lệ nếu null
+	+ as? : throw ễcption nếu ép kiểu sai
