@@ -20,6 +20,6 @@ sử dụng val hoặc var
 
 *ĐIỂM CẦN NHỚ
 - Một kiểu chung là covariant nếu bạn có thể sử dụng một kiểu con thay cho siêu kiểu. Bạn xác định rằng một loại là
-covariant bằng cách thêm tiền tố "out" vào
+covariant bằng cách thêm tiền tố "out" vào.
 - Một loại chung là contravariant nếu bạn có thể sử dụng một siêu kiểu thay cho một kiểu con. Bạn xác định rằng một
 loại là chống chỉ định bằng cách thêm tiền tố "out" vào.
