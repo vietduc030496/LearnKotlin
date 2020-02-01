@@ -1,0 +1,72 @@
+MỞ ĐẦU
+lambda: là 1 type của object chứa block code
+
+- Lambda bắt đầu và kết thúc với dấu ngoặc nhọn {}
+- ví dụ: {x: Int -> x + 5}
+- -> được sử dụng để tách bất kỳ tham số nào khỏi cơ thể.
+Nó giống như nói rằng Hey Hey, tham số, làm điều này
+- Lambda có thể có nhiểu tham số : {x: Int, y: Int -> x + y}
+- Nếu lambda không có tham số, bạn có thể bỏ qua ->. ví dụ: {"Pow!"}
+
+BẠN CÓ THỂ GÁN Lambda CHO 1 BIẾN
+- Khi gán lambda cho một biến, có nghĩa gán một khối mã cho nó, không phải là kết quả của
+mã đang được chạy. Để chạy mã trong lambda, bạn cần phải gọi invoke()
+- ví dụ
+	val addInts = { x: Int, y: Int -> x + y }
+	val result = addInts.invoke(6, 7)
+
+hoặc gọi tắt
+	val result = addInts(6, 7)
+	- 1: tạo 1 lambda { x: Int, y: Int -> x + y } và gán tham chiếu đến lambda cho biến addInts
+	- 2: gọi lambda đc tham chiếm bởi addInts và truyền param 6, 7
+	- 3: thức thi lambda và trả về tham chiếu đến kết quả ở đây là 13
+	- 4: gán tham chiếu đến kết quả cho biến result
+	
+-LAMBDA TYPE
+	- có dạng: (parameters) -> return_type
+	- ví dụ: val msg = { x: Int -> "The value is $x" } có type là (Int) -> String
+	- tuy nhiên có thể khai báo kiểu cửa lambda
+		val add: (Int, Int) -> Int
+		add = { x: Int, y: Int -> x + y }
+	- compiler có thể tự suy ra kiểu của param nến có thể viết gọn:
+		val add: (Int, Int) -> Int	= { x, y -> x + y }
+	- nếu lambda có 1 param và compiler có thể suy ra kiểu của nó, ta có thể sử dụng "it"
+		val addFive: (Int) -> Int = { it + 5 }
+	- lambda ko có giá trị trả về
+		val myLambda: () -> Unit = { println("Hi!") }
+
+- TRUYỀN LAMBDA CHO FUNCTION
+	- hàm sử dụng lambda làm param hoặc trả về họi là hàm bậc cao
+	- ví dụ: val fahrenheit = convert(20.0, { c: Double -> c * 1.8 + 32 })
+		- 1: tạo object 20.0 và lambda cao và truyền vào convert
+	
+	- có thể di chuyển lambda ra ngoài () của function nếu lambda là tham số cưới cùng
+		convert(20.0, { c: Double -> c * 1.8 + 32 }) tương đương
+		convert(20.0) { c: Double -> c * 1.8 + 32 })
+	- có thể bỏ qua () nếu function có 1 tham số và tham số đó là lambda
+		fun convertFive(converter: (Int) -> Double) : Double tương dương
+		fun convertFive{it + 5} page 476
+
+- FUNTION TRẢ VỀ LAMBDA : page 480
+	
+
+- FUNCTION NHẬN VÀ TRẢ VỀ LAMBDA: page 481
+
+- SỬ DỤNG typelias ĐỂ CUNG CẤP 1 TÊN KHÁC CHO MỘT LOẠI HIỆN CÓ
+	- đùng để định danh 1 type mục đích dễ đọc hơn
+		typealias test = (Double) -> Double
+		
+- ĐIỂM CẦN NHỚ
+	- Một lambda có thể có nhiều dòng. Biểu thức được đánh giá cuối cùng trong cơ thể được sử dụng như lambda
+giá trị trả về.
+	- Một loại lambda có định dạng:
+		(parameters) -> return_type
+	- Nếu lambda có một tham số duy nhất, bạn có thể thay thế nó bằng "it"	
+	- Bạn có thể truyền lambda cho một hàm làm tham số hoặc sử dụng làm giá trị trả về của hàm. Một
+Hàm sử dụng lambda theo cách này được gọi là hàm bậc cao hơn.
+	- Nếu tham số cuối cùng của hàm là lambda, bạn có thể di chuyển lambda bên ngoài hàm.
+dấu ngoặc đơn khi bạn gọi hàm.
+	- Nếu một hàm có một tham số duy nhất là một lambda, bạn có thể bỏ qua dấu ngoặc đơn khi bạn gọi
+chức năng.
+	- Một bí danh loại cho phép bạn cung cấp một tên thay thế cho một loại hiện có. Bạn xác định một bí danh loại
+sử dụng typealias.
