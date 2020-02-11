@@ -1,0 +1,25 @@
+Ở ĐẦU:collection cho phép tăng giảm kich thước mảng
+
+- có 3 loại collection : đều là immutable
+	+ List : cho lưu trữ trùng lặp
+	+ Set : ko cho lưu trữ trùng lặp, ko sắp xếp(java sắp xếp) 
+	+ map : lưu trữ trung lặp value, ko lưu trữ trùng lặp key
+
+- LIST: có subclass là mutableList
+	+ mutableList
+
+- SET: có subclass mutableSet
+	+ cách Set check duplicate
+		- Set lấy mã băm đối tượng, và so sánh nó với mã băm của các đối tượng trong Set.
+		- Nếu hashCode trùng nhau sẽ dùng === so sánh các object trùng hashCode
+		- Nếu === false thì sẽ dùng ==
+		->  Vì vậy, có hai tình huống trong đó Set xem giá trị là trùng lặp: nếu đó là cùng một đối tượng,
+hoặc bằng với một giá trị mà nó đã chứa
+
+-MAP: có subclass là mutableMap
+
+-ĐIỂM CẦN NHỚ
+	+ Tạo một mảng được khởi tạo với các giá trị null bằng cách sử dụng hàm ArrayOfNulls.
+	+ Các hàm mảng hữu ích bao gồm: sort, Reverse, chứa, min, max, sum, Average
+	+ 1 Set kiểm tra các bản sao bằng cách trước tiên tìm kiếm các giá trị mã băm phù hợp. Sau đó nó sử dụng
+các toán tử === và == để kiểm tra tính bằng nhau của tham chiếu hoặc đối tượng.

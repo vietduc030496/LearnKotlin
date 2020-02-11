@@ -1,0 +1,32 @@
+mở Đầu: khi muốn class đc kế thừa nhưng ko cần khởi tạo thì dùng inteface và abstract
+
+	+ dùng abstract trước class để khai báo: ko cần khai báo open nữa
+	+ trong abstract class có thể có thuộc tính và function abstract(java chỉ có function)
+	+ abstract tc function và thuộc tính để khai báo đó là abstract
+	+ thuộc tính abstract ko có getter setter và giá trị khởi tạo
+	
+	+ inteface định nghĩa function, thuộc tính trừu tượng và cụ thể(khác java chỉ có trừu tượng)
+	+ để "inteface" thay cho class định nghĩa 1 inteface
+	+ inteface ko có contructor, ko có trường sao lưu(field)
+	+ trong inteface, copiler tự đông coi function ko có thân là abstract
+	+ nếu kế thừa 2 inteface có cùng function hay thuộc tính, lớp con phải triển khai riêng
+	
+	+is: tương tự intaneOf trong java: !is ngược lại is
+	
+	+when: tương tự swtich trong java: có thể dùng is trong when
+		when(x) {
+			0 -> print("0")
+			1, 2 -> print("1, 2")
+			else -> {print("else)}
+		+ tương tự if, ưhen có thể làm biểu thức
+		val str = when(x)
+					0 -> true
+					else -> false
+	+as: ép kiểu đối tượng:
+
+ĐIỂM CẦN NHỚ:
+	+ Đã là thược tính abstract ko đc khởi tạo
+	+ inteface ko có field
+	+ is thực hiện một cast thông minh khi compiler đảm bảo rằng đối tượng cơ bản
+không thể thay đổi giữa kiểm tra loại và cách sử dụng
+	

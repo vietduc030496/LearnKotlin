@@ -1,0 +1,25 @@
+MỞ ĐẦU:
+
+- ví dụ class Contest<T: Pet>: t phải là kiểu Pet
+- prefix "out": ví dụ: inteface Retailer<out T> đùng subclass cuat T thấy cho T: page 431
+
+Nói chung, một loại chung của lớp hoặc giao diện có thể được thêm tiền tố "out" nếu lớp có các hàm
+sử dụng nó như một kiểu trả về hoặc nếu lớp có các thuộc tính val của loại đó. Tuy nhiên, bạn không thể sử dụng nếu
+lớp có các tham số hàm hoặc thuộc tính var của kiểu chung đó
+
+<trong <>>
+* T ko thể sử đụng như 1 thâm số
+* T ko thể sử dụng như 1 thuộc tính var
+
+-use a generic supertype in place of a generic subtype. : page 440: prefix "in": ngược lại "out"
+
+Nói chung, một loại chung của lớp hoặc giao diện có thể được thêm tiền tố "in" vào nếu lớp có các hàm
+sử dụng nó như một loại tham số. Tuy nhiên, bạn không thể sử dụng nếu bất kỳ hàm nào của lớp sử dụng nó như là một sự trở lại
+loại hoặc nếu loại đó được sử dụng bởi bất kỳ thuộc tính nào, bất kể chúng có được xác định hay không
+sử dụng val hoặc var
+
+*ĐIỂM CẦN NHỚ
+- Một kiểu chung là covariant nếu bạn có thể sử dụng một kiểu con thay cho siêu kiểu. Bạn xác định rằng một loại là
+covariant bằng cách thêm tiền tố "out" vào.
+- Một loại chung là contravariant nếu bạn có thể sử dụng một siêu kiểu thay cho một kiểu con. Bạn xác định rằng một
+loại là chống chỉ định bằng cách thêm tiền tố "out" vào.
